@@ -84,7 +84,11 @@ namespace Sage.CA.SBS.ERP.Sage300.VPF.Web.Controllers
             //}
             return Content("Successfull VPF Prject Dependency Injection");
         }
-
-        #endregion
-    }
+        [System.Web.Mvc.HttpGet]
+        public ActionResult AP(string id)
+        {
+            return View();
+        }
+            #endregion
+        }
 }
