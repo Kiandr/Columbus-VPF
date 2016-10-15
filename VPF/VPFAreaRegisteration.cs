@@ -40,7 +40,7 @@ namespace Sage.CA.SBS.ERP.Sage300.Web.Areas.VPF
         /// <param name="context">Context object</param>
         private void RegisterRoutes(AreaRegistrationContext context)
         {
-            context.MapRoute("Core_VPF", "{tenantAlias}/VPF/{controller}/{action}/{id}",
+            context.MapRoute("Core_VPF", "VPF/{controller}/{action}/{id}",
                 new { area = "VPF", controller = "Flow", action = "Index", id = UrlParameter.Optional },
                 namespaces: new[] { "Sage.CA.SBS.ERP.Sage300.VPF.Web.Controllers" });
 
